@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Politique de confidentialité - InsuCalc</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6;color:#111}
+    h1,h2{line-height:1.25} code{background:#f4f4f4;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <h1>Politique de confidentialité d'InsuCalc</h1>
+  <p><strong>Dernière mise à jour :</strong> 15 juin 2026</p>
+  <p><strong>Version :</strong> 2.0</p>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>Cette application (« InsuCalc ») est gérée par son développeur. Contact : <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.</p>
+
+  <h2>2. Ce que fait l'application</h2>
+  <p>
+    InsuCalc est un outil de soutien nutritionnel pour les personnes diabétiques qui facilite le calcul des portions
+    de glucides à partir des informations nutritionnelles des repas. En plus de la calculatrice, il propose des
+    fonctionnalités premium telles qu'une recherche d'aliments, un scanner de codes-barres, l'enregistrement
+    illimité de repas et l'analyse de repas par photo via l'intelligence artificielle (disponible uniquement pour
+    les utilisateurs autorisés). Le calcul des portions est la fonction principale et est gratuit.
+  </p>
+  <p>
+    <strong>InsuCalc ne calcule pas de doses de médicaments, n'est pas un dispositif médical et n'exerce aucune
+    fonction clinique.</strong> Le résultat fourni par l'application est une donnée nutritionnelle indicative, non
+    une recommandation thérapeutique. Toute décision de santé doit toujours être prise sous la supervision de
+    l'équipe médicale de l'utilisateur.
+  </p>
+
+  <h2>3. Avertissement médical important</h2>
+  <p>
+    InsuCalc est un outil de soutien et d'orientation nutritionnelle, <strong>pas un dispositif médical</strong> ni
+    un substitut au jugement d'un professionnel de santé. Les estimations (y compris celles de l'analyse IA,
+    lorsque disponible) peuvent contenir des erreurs. N'utilisez pas l'application comme seule source pour les
+    décisions affectant votre santé. Suivez toujours les recommandations de votre équipe médicale.
+  </p>
+
+  <h2>4. Données que l'application peut traiter</h2>
+  <p><strong>a) Compte utilisateur (Se connecter avec Apple)</strong><br />
+    Pour utiliser les fonctionnalités premium, vous devez vous connecter avec Apple. L'application reçoit un
+    identifiant utilisateur et, si vous l'autorisez et uniquement lors de la première connexion, votre nom. Si vous
+    choisissez l'option « Masquer mon adresse e-mail » d'Apple, nous recevons une adresse de transfert anonyme au
+    lieu de votre vrai e-mail. Ces données sont gérées via Firebase Authentication (Google).
+  </p>
+  <p><strong>b) Données relatives à la santé (catégories particulières)</strong><br />
+    Les photos de repas capturées pour l'analyse IA (si cette fonctionnalité est disponible pour votre compte),
+    ainsi que les valeurs nutritionnelles estimées (glucides, graisses, protéines) et les calculs de portions
+    dérivés, sont des données relatives à la santé. Elles bénéficient d'une protection renforcée conformément au
+    RGPD. Les photos sont utilisées uniquement pour effectuer l'analyse demandée et ne sont pas publiées ni
+    associées à un profil public. Les repas que vous enregistrez manuellement dans l'application (avec leurs
+    valeurs nutritionnelles) sont également des données relatives à la santé.
+  </p>
+  <p><strong>c) Statut d'abonnement et compteurs d'utilisation</strong><br />
+    Pour gérer l'accès aux fonctionnalités premium, nous stockons sur nos serveurs (Firebase Firestore) votre
+    identifiant utilisateur, si votre abonnement est actif, sa date d'expiration et des compteurs de base de
+    l'utilisation des fonctionnalités premium (Recherche, Scanner et, lorsque disponible, analyse IA), ainsi que
+    le nombre actuel de repas enregistrés. Ces compteurs sont utilisés uniquement à des fins statistiques internes
+    et d'amélioration du produit. Ils ne sont pas partagés avec des tiers à des fins commerciales. Le statut de
+    l'abonnement est synchronisé via RevenueCat et les notifications Apple.
+  </p>
+  <p><strong>d) Achats et abonnements intégrés</strong><br />
+    L'application utilise StoreKit (Apple) et RevenueCat pour gérer les abonnements. Le paiement et la validation
+    des achats sont gérés par Apple. Le développeur ne reçoit ni ne stocke vos informations de paiement.
+  </p>
+  <p><strong>e) Données stockées localement sur l'appareil</strong><br />
+    Préférences de l'application, paramètres de calcul, catégories alimentaires personnalisées, paramètres
+    d'intégration, historique d'utilisation (recherches, scans et analyses photo effectués) et autres préférences
+    d'utilisation. L'historique peut être synchronisé entre vos appareils Apple via iCloud Key-Value Store (service
+    Apple), à l'exception des images associées, qui restent uniquement sur l'appareil où elles ont été générées.
+  </p>
+  <p><strong>f) Requêtes à Open Food Facts</strong><br />
+    Lorsque vous utilisez la Recherche ou le Scanner de codes-barres, l'application envoie des requêtes à la base
+    de données publique Open Food Facts. Ces requêtes ne partagent pas votre identité ni vos données personnelles
+    — seul le texte de recherche ou le code-barres scanné est envoyé. Les images de produits renvoyées par Open
+    Food Facts sont téléchargées sur votre appareil uniquement localement.
+  </p>
+
+  <h2>5. Analyse de repas par photo (fonctionnalité optionnelle, sous réserve de disponibilité)</h2>
+  <p>
+    InsuCalc inclut une fonctionnalité d'analyse de repas par photo via l'intelligence artificielle. <strong>Cette
+    fonctionnalité n'est pas disponible pour tous les utilisateurs et peut être activée ou désactivée en fonction de
+    critères techniques ou réglementaires.</strong> Lorsqu'elle est disponible et que vous l'utilisez, l'image est
+    transmise de manière sécurisée, via notre serveur, à l'API OpenAI dans le seul but d'estimer la composition
+    nutritionnelle du plat. L'image est traitée pour obtenir le résultat et n'est pas utilisée pour vous associer à
+    un profil public. Le traitement par OpenAI est en outre régi par ses propres conditions et politique de
+    confidentialité. Si vous ne souhaitez pas que vos images soient traitées de cette manière, n'utilisez pas la
+    fonction d'analyse par photo.
+  </p>
+
+  <h2>6. Ce que l'application ne fait PAS</h2>
+  <p>
+    Elle ne vend pas de données personnelles. Elle n'utilise pas vos photos ni vos données de santé à des fins
+    publicitaires. Elle n'affiche pas de publicités tierces dans l'application. Elle ne partage pas vos compteurs
+    d'utilisation avec des annonceurs ou des tiers à des fins commerciales.
+  </p>
+
+  <h2>7. Services et tiers</h2>
+  <p>InsuCalc s'appuie sur les services tiers suivants :</p>
+  <ul>
+    <li>Apple (Se connecter avec Apple, StoreKit, App Store, iCloud Key-Value Store, iOS et services système)</li>
+    <li>Google Firebase (Authentication, Firestore, Remote Config et Cloud Functions)</li>
+    <li>RevenueCat (gestion du statut des abonnements)</li>
+    <li>Open Food Facts (base de données publique d'aliments et de produits)</li>
+    <li>OpenAI (analyse d'images alimentaires par IA, lorsque disponible)</li>
+  </ul>
+  <p>Chaque fournisseur peut appliquer sa propre politique de confidentialité au traitement des données dans ses services.</p>
+
+  <h2>8. Base juridique (RGPD)</h2>
+  <ul>
+    <li>Consentement explicite pour le traitement des données de santé (utilisation de l'analyse photo IA, lorsque disponible) et, le cas échéant, les autorisations système comme la caméra.</li>
+    <li>Exécution du contrat/service demandé par l'utilisateur (calcul des portions, gestion de l'abonnement et fonctionnalités premium).</li>
+    <li>Intérêt légitime pour la sécurité, le fonctionnement, l'amélioration de base de l'application et l'élaboration de statistiques d'utilisation agrégées pour les décisions produit.</li>
+  </ul>
+
+  <h2>9. Conservation</h2>
+  <p>
+    Les données locales (y compris l'historique des recherches, scans et analyses photo) restent sur votre appareil
+    jusqu'à ce que vous les supprimiez ou désinstalliez l'application. L'historique est limité aux 100 entrées les
+    plus récentes ; les plus anciennes sont supprimées automatiquement. Les données associées à votre compte sur
+    nos serveurs (identifiant, statut d'abonnement, compteurs d'utilisation) sont conservées tant que votre compte
+    existe ; elles sont supprimées lors de la suppression du compte. Les images envoyées pour analyse sont traitées
+    pour obtenir le résultat ; leur conservation par le fournisseur IA est régie par les politiques de ce fournisseur.
+    Les données traitées par des tiers sont conservées selon leurs politiques respectives.
+  </p>
+
+  <h2>10. Droits de l'utilisateur</h2>
+  <p>
+    Vous pouvez révoquer les autorisations depuis iOS (Réglages). Vous pouvez <strong>supprimer votre compte et les
+    données associées</strong> directement depuis l'application, dans l'écran Paramètres. Notez que la suppression
+    de votre compte n'annule pas automatiquement un abonnement Apple actif : vous devez le gérer depuis les
+    paramètres de votre compte App Store. Vous pouvez également exercer vos droits d'accès, de rectification,
+    d'effacement, d'opposition, de limitation ou de portabilité en écrivant à
+    <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.
+  </p>
+
+  <h2>11. Mineurs</h2>
+  <p>
+    L'application n'est pas spécifiquement destinée aux enfants de moins de 14 ans. L'utilisation par des mineurs
+    doit se faire sous la supervision d'un adulte responsable et de l'équipe médicale appropriée. Si vous détectez
+    une utilisation inappropriée par des mineurs, contactez-nous par e-mail.
+  </p>
+
+  <h2>12. Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour pour refléter des changements légaux, techniques ou fonctionnels. La date de la dernière mise à jour sera toujours publiée.</p>
+</body>
+</html>

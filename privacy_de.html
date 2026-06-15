@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Datenschutzrichtlinie - InsuCalc</title>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 16px;line-height:1.6;color:#111}
+    h1,h2{line-height:1.25} code{background:#f4f4f4;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <h1>Datenschutzrichtlinie von InsuCalc</h1>
+  <p><strong>Zuletzt aktualisiert:</strong> 15. Juni 2026</p>
+  <p><strong>Version:</strong> 2.0</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <p>Diese Anwendung („InsuCalc") wird von ihrem Entwickler verwaltet. Kontakt: <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.</p>
+
+  <h2>2. Was die App tut</h2>
+  <p>
+    InsuCalc ist ein Ernährungshilfsmittel für Menschen mit Diabetes, das die Berechnung von Kohlenhydratportionen
+    anhand der Nährwertangaben von Mahlzeiten erleichtert. Neben dem Rechner bietet die App Premium-Funktionen wie
+    eine Lebensmittelsuche, einen Barcode-Scanner, unbegrenztes Speichern von Mahlzeiten und KI-gestützte
+    Lebensmittelfotoanalyse (nur für autorisierte Nutzer verfügbar). Die Portionsberechnung ist die Hauptfunktion
+    und kostenlos.
+  </p>
+  <p>
+    <strong>InsuCalc berechnet keine Medikamentendosen, ist kein Medizinprodukt und erfüllt keine klinische Funktion.</strong>
+    Das von der App angezeigte Ergebnis ist ein orientativer Nährwert, keine therapeutische Empfehlung.
+    Jede gesundheitliche Entscheidung muss stets unter Aufsicht des medizinischen Teams des Nutzers getroffen werden.
+  </p>
+
+  <h2>3. Wichtiger medizinischer Hinweis</h2>
+  <p>
+    InsuCalc ist ein Ernährungshilfs- und Orientierungsmittel, <strong>kein Medizinprodukt</strong> und kein Ersatz
+    für das Urteil eines Gesundheitsfachmanns. Schätzungen (einschließlich KI-Analysen, sofern verfügbar) können
+    Fehler enthalten. Verwende die App nicht als einzige Grundlage für gesundheitliche Entscheidungen. Befolge
+    stets die Vorgaben deines medizinischen Teams.
+  </p>
+
+  <h2>4. Von der App verarbeitete Daten</h2>
+  <p><strong>a) Benutzerkonto (Anmelden mit Apple)</strong><br />
+    Für Premium-Funktionen musst du dich mit Apple anmelden. Die App erhält eine Benutzer-ID und, sofern du es
+    autorisierst und nur bei der ersten Anmeldung, deinen Namen. Wenn du Apples Option „Meine E-Mail-Adresse
+    verbergen" wählst, erhalten wir eine anonyme Weiterleitungsadresse statt deiner echten E-Mail. Diese Daten
+    werden über Firebase Authentication (Google) verwaltet.
+  </p>
+  <p><strong>b) Gesundheitsbezogene Daten (besondere Datenkategorien)</strong><br />
+    Lebensmittelfotos für die KI-Analyse (sofern diese Funktion für dein Konto verfügbar ist) sowie geschätzte
+    Nährwerte (Kohlenhydrate, Fette, Proteine) und abgeleitete Portionsberechnungen sind gesundheitsbezogene Daten.
+    Sie erhalten gemäß DSGVO einen erhöhten Schutz. Fotos werden ausschließlich zur Durchführung der angeforderten
+    Analyse verwendet und weder veröffentlicht noch einem öffentlichen Profil zugeordnet. Mahlzeiten, die du manuell
+    in der App speicherst (mit ihren Nährwerten), sind ebenfalls gesundheitsbezogene Daten.
+  </p>
+  <p><strong>c) Abonnementstatus und Nutzungszähler</strong><br />
+    Zur Verwaltung des Zugangs zu Premium-Funktionen speichern wir auf unseren Servern (Firebase Firestore) deine
+    Benutzer-ID, ob dein Abonnement aktiv ist, sein Ablaufdatum und grundlegende Zähler der Nutzung von
+    Premium-Funktionen (Suche, Scanner und, sofern verfügbar, KI-Analyse) sowie die aktuelle Anzahl gespeicherter
+    Mahlzeiten. Diese Zähler werden ausschließlich für interne statistische Zwecke und zur Produktverbesserung
+    verwendet. Sie werden nicht zu kommerziellen Zwecken an Dritte weitergegeben. Der Abonnementstatus wird
+    über RevenueCat und Apple-Benachrichtigungen synchronisiert.
+  </p>
+  <p><strong>d) In-App-Käufe und Abonnements</strong><br />
+    Die App verwendet StoreKit (Apple) und RevenueCat zur Abonnementverwaltung. Zahlung und Kaufvalidierung werden
+    von Apple abgewickelt. Der Entwickler erhält oder speichert keine Zahlungsmethodeninformationen.
+  </p>
+  <p><strong>e) Lokal auf dem Gerät gespeicherte Daten</strong><br />
+    App-Einstellungen, Berechnungseinstellungen, eigene Lebensmittelkategorien, Onboarding-Einstellungen,
+    Nutzungsverlauf (durchgeführte Suchen, Scans und Fotoanalysen) und andere Nutzungseinstellungen. Der Verlauf
+    kann zwischen deinen Apple-Geräten über iCloud Key-Value Store (Apple-Dienst) synchronisiert werden, mit
+    Ausnahme der zugehörigen Bilder, die ausschließlich auf dem Gerät verbleiben, auf dem sie erstellt wurden.
+  </p>
+  <p><strong>f) Abfragen an Open Food Facts</strong><br />
+    Wenn du die Suche oder den Barcode-Scanner verwendest, sendet die App Abfragen an die öffentliche Open Food
+    Facts-Datenbank. Bei diesen Abfragen werden keine identifizierenden oder personenbezogenen Daten geteilt — nur
+    der Suchtext oder der gescannte Barcode wird gesendet. Produktbilder, die von Open Food Facts zurückgegeben
+    werden, werden ausschließlich lokal auf dein Gerät heruntergeladen.
+  </p>
+
+  <h2>5. Lebensmittelfotoanalyse (optionale Funktion, abhängig von der Verfügbarkeit)</h2>
+  <p>
+    InsuCalc enthält eine Funktion zur Lebensmittelfotoanalyse mittels künstlicher Intelligenz. <strong>Diese
+    Funktion ist nicht für alle Nutzer verfügbar und kann auf Grundlage technischer oder regulatorischer Kriterien
+    aktiviert oder deaktiviert werden.</strong> Wenn sie verfügbar ist und du sie verwendest, wird das Bild sicher
+    über unseren Server an die OpenAI-API übermittelt, ausschließlich zum Zweck der Schätzung der
+    Nährstoffzusammensetzung des Gerichts. Das Bild wird zur Ergebnisgewinnung verarbeitet und nicht dazu verwendet,
+    dich einem öffentlichen Profil zuzuordnen. Die Verarbeitung durch OpenAI unterliegt zusätzlich deren eigenen
+    Nutzungsbedingungen und Datenschutzrichtlinie. Wenn du nicht möchtest, dass deine Bilder auf diese Weise
+    verarbeitet werden, verwende die Fotoanalysefunktion nicht.
+  </p>
+
+  <h2>6. Was die App NICHT tut</h2>
+  <p>
+    Sie verkauft keine personenbezogenen Daten. Sie verwendet deine Fotos oder Gesundheitsdaten nicht für
+    Werbezwecke. Sie zeigt keine Werbung Dritter in der App an. Sie teilt deine Nutzungszähler nicht zu
+    kommerziellen Zwecken mit Werbetreibenden oder Dritten.
+  </p>
+
+  <h2>7. Dienste und Dritte</h2>
+  <p>InsuCalc stützt sich auf folgende Drittanbieterdienste:</p>
+  <ul>
+    <li>Apple (Anmelden mit Apple, StoreKit, App Store, iCloud Key-Value Store, iOS und Systemdienste)</li>
+    <li>Google Firebase (Authentication, Firestore, Remote Config und Cloud Functions)</li>
+    <li>RevenueCat (Abonnementstatusverwaltung)</li>
+    <li>Open Food Facts (öffentliche Lebensmittel- und Produktdatenbank)</li>
+    <li>OpenAI (KI-Lebensmittelbildanalyse, sofern verfügbar)</li>
+  </ul>
+  <p>Jeder Anbieter kann seine eigene Datenschutzrichtlinie auf die Datenverarbeitung innerhalb seiner Dienste anwenden.</p>
+
+  <h2>8. Rechtsgrundlage (DSGVO)</h2>
+  <ul>
+    <li>Ausdrückliche Einwilligung zur Verarbeitung von Gesundheitsdaten (Nutzung der KI-Fotoanalyse, sofern verfügbar) und ggf. Systemberechtigungen wie die Kamera.</li>
+    <li>Erfüllung des vom Nutzer angeforderten Vertrags/Dienstes (Portionsberechnung, Abonnementverwaltung und Premium-Funktionen).</li>
+    <li>Berechtigtes Interesse an der Sicherheit, dem Betrieb, der grundlegenden Verbesserung der App und der Erstellung aggregierter Nutzungsstatistiken für Produktentscheidungen.</li>
+  </ul>
+
+  <h2>9. Speicherung</h2>
+  <p>
+    Lokale Daten (einschließlich des Verlaufs von Suchen, Scans und Fotoanalysen) verbleiben auf deinem Gerät, bis
+    du sie löschst oder die App deinstallierst. Der Verlauf ist auf die 100 neuesten Einträge begrenzt; ältere
+    werden automatisch gelöscht. Mit deinem Konto verknüpfte Daten auf unseren Servern (Kennung, Abonnementstatus,
+    Nutzungszähler) werden gespeichert, solange dein Konto besteht; beim Löschen des Kontos werden sie gelöscht.
+    Zur Analyse übermittelte Bilder werden zur Ergebnisgewinnung verarbeitet; ihre Speicherung durch den
+    KI-Anbieter richtet sich nach dessen Richtlinien. Von Dritten verarbeitete Daten werden gemäß deren jeweiliger
+    Richtlinien gespeichert.
+  </p>
+
+  <h2>10. Nutzerrechte</h2>
+  <p>
+    Du kannst Berechtigungen über iOS (Einstellungen) widerrufen. Du kannst <strong>dein Konto und die zugehörigen
+    Daten</strong> direkt in der App im Einstellungsbildschirm löschen. Beachte, dass das Löschen deines Kontos ein
+    aktives Apple-Abonnement nicht automatisch kündigt: Dazu musst du es über deine App Store-Kontoeinstellungen
+    verwalten. Du kannst außerdem deine Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch, Einschränkung
+    oder Übertragbarkeit ausüben, indem du an
+    <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a> schreibst.
+  </p>
+
+  <h2>11. Minderjährige</h2>
+  <p>
+    Die App richtet sich nicht speziell an Kinder unter 14 Jahren. Die Nutzung durch Minderjährige muss unter
+    Aufsicht eines verantwortlichen Erwachsenen und des entsprechenden medizinischen Teams erfolgen. Wenn du
+    eine unangemessene Nutzung durch Minderjährige feststellst, kontaktiere uns per E-Mail.
+  </p>
+
+  <h2>12. Änderungen dieser Richtlinie</h2>
+  <p>Diese Richtlinie kann aktualisiert werden, um rechtlichen, technischen oder funktionalen Änderungen Rechnung zu tragen. Das Datum der letzten Aktualisierung wird stets veröffentlicht.</p>
+</body>
+</html>
