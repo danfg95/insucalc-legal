@@ -11,8 +11,8 @@
 </head>
 <body>
   <h1>Política de Privacidade do InsuCalc</h1>
-  <p><strong>Última atualização:</strong> 6 de junho de 2026</p>
-  <p><strong>Versão:</strong> 1.0</p>
+  <p><strong>Última atualização:</strong> 15 de junho de 2026</p>
+  <p><strong>Versão:</strong> 2.0</p>
 
   <h2>1. Responsável</h2>
   <p>Este aplicativo ("InsuCalc") é gerenciado pelo seu desenvolvedor. Contato: <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.</p>
@@ -21,8 +21,9 @@
   <p>
     InsuCalc é uma ferramenta de apoio nutricional para pessoas com diabetes que facilita o cálculo de porções de
     carboidratos a partir das informações nutricionais das refeições. Além da calculadora, oferece funções premium
-    como análise de refeições por foto com inteligência artificial, pesquisa de alimentos e leitor de códigos de
-    barras. O cálculo de porções é a função principal e é gratuito.
+    como uma pesquisa de alimentos, um leitor de códigos de barras, o guardado ilimitado de refeições e análise
+    de refeições por foto com inteligência artificial (disponível apenas para utilizadores autorizados). O cálculo
+    de porções é a função principal e é gratuito.
   </p>
   <p>
     <strong>O InsuCalc não calcula doses de medicamentos, não é um dispositivo médico e não realiza nenhuma função
@@ -33,97 +34,115 @@
   <h2>3. Aviso médico importante</h2>
   <p>
     O InsuCalc é uma ferramenta de apoio e orientação nutricional, <strong>não um dispositivo médico</strong> nem
-    um substituto do julgamento de um profissional de saúde. As estimativas (incluindo as da análise de IA) podem
-    conter erros. Não use o aplicativo como única fonte para decisões que afetam sua saúde. Siga sempre as
-    orientações da sua equipe médica.
+    um substituto do julgamento de um profissional de saúde. As estimativas (incluindo as da análise de IA, quando
+    disponível) podem conter erros. Não use o aplicativo como única fonte para decisões que afetam sua saúde. Siga
+    sempre as orientações da sua equipe médica.
   </p>
 
   <h2>4. Dados que o aplicativo pode tratar</h2>
-  <p><strong>a) Conta de usuário (Login com Apple)</strong><br />
-    Para usar os recursos premium, você precisa fazer login com a Apple. O aplicativo recebe um identificador de
-    usuário e, se você autorizar e apenas no primeiro login, seu nome. Se você escolher a opção "Ocultar meu
+  <p><strong>a) Conta de utilizador (Iniciar sessão com Apple)</strong><br />
+    Para usar os recursos premium, você precisa iniciar sessão com a Apple. O aplicativo recebe um identificador
+    de utilizador e, se você autorizar e apenas no primeiro login, seu nome. Se você escolher a opção "Ocultar meu
     e-mail" da Apple, recebemos um endereço de encaminhamento anônimo em vez do seu e-mail real. Esses dados são
     gerenciados pelo Firebase Authentication (Google).
   </p>
   <p><strong>b) Dados relacionados à saúde (categorias especiais)</strong><br />
-    As fotos de alimentos capturadas para análise de IA, bem como os valores nutricionais estimados (carboidratos,
-    gorduras, proteínas) e os cálculos de porções derivados, são dados relacionados à saúde. Recebem proteção
-    reforçada conforme o GDPR. As fotos são usadas exclusivamente para realizar a análise solicitada e não são
-    publicadas nem associadas a um perfil público.
+    As fotos de alimentos capturadas para análise de IA (se esta função estiver disponível para a sua conta), os
+    valores nutricionais estimados (carboidratos, gorduras, proteínas) e os cálculos de porções derivados são
+    dados relacionados à saúde. Recebem proteção reforçada conforme o GDPR. As fotos são usadas exclusivamente
+    para realizar a análise solicitada e não são publicadas nem associadas a um perfil público. As refeições que
+    você guarda manualmente no aplicativo (com os seus valores nutricionais) também são dados relacionados à saúde.
   </p>
-  <p><strong>c) Status da assinatura</strong><br />
-    Para gerenciar o acesso aos recursos premium, armazenamos em nossos servidores (Firebase Firestore) seu
-    identificador de usuário, se sua assinatura está ativa, sua data de vencimento e um contador de uso. O status
-    da assinatura é sincronizado pelo RevenueCat e pelas notificações da Apple.
+  <p><strong>c) Estado da subscrição e contadores de utilização</strong><br />
+    Para gerir o acesso aos recursos premium, armazenamos nos nossos servidores (Firebase Firestore) o seu
+    identificador de utilizador, se a sua subscrição está ativa, a sua data de expiração e contadores básicos da
+    utilização das funções premium (Pesquisa, Leitor e, quando disponível, análise por IA), bem como o número
+    atual de refeições guardadas. Estes contadores são utilizados exclusivamente para fins estatísticos internos e
+    de melhoria do produto. Não são partilhados com terceiros para fins comerciais. O estado da subscrição é
+    sincronizado pelo RevenueCat e pelas notificações da Apple.
   </p>
-  <p><strong>d) Compras e assinaturas no aplicativo</strong><br />
-    O aplicativo usa StoreKit (Apple) e RevenueCat para gerenciar assinaturas. O pagamento e a validação da compra
-    são gerenciados pela Apple. O desenvolvedor não recebe nem armazena dados do seu método de pagamento.
+  <p><strong>d) Compras e subscrições no aplicativo</strong><br />
+    O aplicativo usa StoreKit (Apple) e RevenueCat para gerir as subscrições. O pagamento e a validação da compra
+    são geridos pela Apple. O desenvolvedor não recebe nem armazena dados do seu método de pagamento.
   </p>
   <p><strong>e) Dados armazenados localmente no dispositivo</strong><br />
     Preferências do aplicativo, configurações de cálculo, categorias de alimentos personalizadas, configurações de
-    integração e outras preferências de uso.
+    integração, histórico de utilização (pesquisas, leituras e análises de foto realizadas) e outras preferências
+    de uso. O histórico pode ser sincronizado entre os seus dispositivos Apple através do iCloud Key-Value Store
+    (serviço da Apple), com exceção das imagens associadas, que permanecem apenas no dispositivo onde foram geradas.
+  </p>
+  <p><strong>f) Consultas ao Open Food Facts</strong><br />
+    Quando utiliza a Pesquisa ou o Leitor de códigos de barras, o aplicativo envia consultas à base de dados
+    pública Open Food Facts. Nessas consultas não é partilhada a sua identidade nem dados pessoais — apenas o
+    texto de pesquisa ou o código de barras lido. As imagens de produtos devolvidas pelo Open Food Facts são
+    descarregadas apenas localmente para o seu dispositivo.
   </p>
 
-  <h2>5. Envio de fotos a um provedor de IA (OpenAI)</h2>
+  <h2>5. Análise de refeições por foto (funcionalidade opcional, sujeita a disponibilidade)</h2>
   <p>
-    Quando você usa a análise de refeições por foto, a imagem é transmitida com segurança, através do nosso servidor,
-    para a API da OpenAI com o único objetivo de estimar a composição nutricional do prato. A imagem é processada
-    para obter o resultado e não é usada para associá-lo a um perfil público. O processamento pela OpenAI é
-    adicionalmente regido por seus próprios termos e política de privacidade. Se não desejar que suas imagens sejam
-    processadas dessa forma, não use a função de análise por foto.
+    O InsuCalc inclui uma funcionalidade de análise de refeições por foto com inteligência artificial. <strong>Esta
+    funcionalidade não está disponível para todos os utilizadores e pode ser ativada ou desativada com base em
+    critérios técnicos ou regulamentares.</strong> Quando estiver disponível e a utilizar, a imagem é transmitida
+    com segurança, através do nosso servidor, para a API da OpenAI com o único objetivo de estimar a composição
+    nutricional do prato. A imagem é processada para obter o resultado e não é usada para associá-lo a um perfil
+    público. O processamento pela OpenAI é adicionalmente regido pelos seus próprios termos e política de
+    privacidade. Se não desejar que as suas imagens sejam processadas dessa forma, não use a função de análise por
+    foto.
   </p>
 
   <h2>6. O que o aplicativo NÃO faz</h2>
   <p>
-    Não vende dados pessoais. Não usa suas fotos nem seus dados de saúde para fins publicitários. Não exibe
-    publicidade de terceiros dentro do aplicativo.
+    Não vende dados pessoais. Não usa as suas fotos nem os seus dados de saúde para fins publicitários. Não exibe
+    publicidade de terceiros dentro do aplicativo. Não partilha os seus contadores de utilização com anunciantes
+    ou terceiros para fins comerciais.
   </p>
 
   <h2>7. Serviços e terceiros</h2>
   <p>O InsuCalc utiliza os seguintes serviços de terceiros:</p>
   <ul>
-    <li>Apple (Login com Apple, StoreKit, App Store, iOS e serviços do sistema)</li>
-    <li>Google Firebase (Authentication, Firestore e Cloud Functions)</li>
-    <li>RevenueCat (gerenciamento do status de assinaturas)</li>
-    <li>OpenAI (análise de imagens de alimentos por IA)</li>
+    <li>Apple (Iniciar sessão com Apple, StoreKit, App Store, iCloud Key-Value Store, iOS e serviços do sistema)</li>
+    <li>Google Firebase (Authentication, Firestore, Remote Config e Cloud Functions)</li>
+    <li>RevenueCat (gestão do estado de subscrições)</li>
+    <li>Open Food Facts (base de dados pública de alimentos e produtos)</li>
+    <li>OpenAI (análise de imagens de alimentos por IA, quando disponível)</li>
   </ul>
-  <p>Cada provedor pode aplicar sua própria política de privacidade ao tratamento de dados em seus serviços.</p>
+  <p>Cada fornecedor pode aplicar a sua própria política de privacidade ao tratamento de dados nos seus serviços.</p>
 
   <h2>8. Base jurídica (GDPR)</h2>
   <ul>
-    <li>Consentimento explícito para o tratamento de dados de saúde (uso da análise por foto de IA) e, quando aplicável, permissões do sistema como a câmera.</li>
-    <li>Execução do contrato/serviço solicitado pelo usuário (cálculo de porções, gerenciamento de assinatura e recursos premium).</li>
-    <li>Interesse legítimo na segurança, funcionamento e melhoria básica do aplicativo.</li>
+    <li>Consentimento explícito para o tratamento de dados de saúde (uso da análise por foto de IA, quando disponível) e, quando aplicável, permissões do sistema como a câmara.</li>
+    <li>Execução do contrato/serviço solicitado pelo utilizador (cálculo de porções, gestão da subscrição e funções premium).</li>
+    <li>Interesse legítimo na segurança, funcionamento, melhoria básica do aplicativo e elaboração de estatísticas de utilização agregadas para decisões de produto.</li>
   </ul>
 
   <h2>9. Retenção</h2>
   <p>
-    Os dados locais permanecem no seu dispositivo até que você os exclua ou desinstale o aplicativo. Os dados
-    associados à sua conta (identificador, status de assinatura) são retidos enquanto sua conta existir; são
-    excluídos ao deletar a conta. As imagens enviadas para análise são processadas para obter o resultado; sua
-    retenção pelo provedor de IA é regida pelas políticas desse provedor. Os dados tratados por terceiros são
-    retidos conforme suas respectivas políticas.
+    Os dados locais (incluindo o histórico de pesquisas, leituras e análises de foto) permanecem no seu dispositivo
+    até que os elimine ou desinstale o aplicativo. O histórico está limitado às 100 entradas mais recentes; as mais
+    antigas são eliminadas automaticamente. Os dados associados à sua conta nos nossos servidores (identificador,
+    estado da subscrição, contadores de utilização) são retidos enquanto a sua conta existir; são eliminados ao
+    apagar a conta. As imagens enviadas para análise são processadas para obter o resultado; a sua retenção pelo
+    fornecedor de IA é regida pelas políticas desse fornecedor. Os dados tratados por terceiros são retidos
+    conforme as suas respetivas políticas.
   </p>
 
-  <h2>10. Direitos do usuário</h2>
+  <h2>10. Direitos do utilizador</h2>
   <p>
-    Você pode revogar permissões no iOS (Configurações). Você pode <strong>excluir sua conta e os dados
-    associados</strong> diretamente no aplicativo, na tela de Configurações. Observe que excluir a conta não
-    cancela automaticamente uma assinatura Apple ativa: você deve gerenciá-la nas configurações da sua conta
-    da App Store. Você também pode exercer seus direitos de acesso, retificação, exclusão, oposição, limitação
-    ou portabilidade escrevendo para
-    <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.
+    Pode revogar permissões no iOS (Definições). Pode <strong>eliminar a sua conta e os dados
+    associados</strong> diretamente no aplicativo, no ecrã de Definições. Note que eliminar a conta não cancela
+    automaticamente uma subscrição Apple ativa: deve geri-la nas definições da sua conta da App Store. Pode também
+    exercer os seus direitos de acesso, retificação, eliminação, oposição, limitação ou portabilidade escrevendo
+    para <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.
   </p>
 
   <h2>11. Menores</h2>
   <p>
     O aplicativo não é especificamente direcionado a menores de 14 anos. O uso por menores deve ser realizado sob
-    a supervisão de um adulto responsável e da equipe médica adequada. Se detectar uso inadequado por menores,
-    entre em contato por e-mail.
+    a supervisão de um adulto responsável e da equipa médica adequada. Se detetar uso inadequado por menores,
+    entre em contacto por e-mail.
   </p>
 
   <h2>12. Alterações nesta política</h2>
-  <p>Esta política pode ser atualizada para refletir mudanças legais, técnicas ou funcionais. A data da última atualização sempre será publicada.</p>
+  <p>Esta política pode ser atualizada para refletir mudanças legais, técnicas ou funcionais. A data da última atualização será sempre publicada.</p>
 </body>
 </html>

@@ -11,8 +11,8 @@
 </head>
 <body>
   <h1>Informativa sulla privacy di InsuCalc</h1>
-  <p><strong>Ultimo aggiornamento:</strong> 6 giugno 2026</p>
-  <p><strong>Versione:</strong> 1.0</p>
+  <p><strong>Ultimo aggiornamento:</strong> 15 giugno 2026</p>
+  <p><strong>Versione:</strong> 2.0</p>
 
   <h2>1. Titolare del trattamento</h2>
   <p>Questa applicazione ("InsuCalc") è gestita dal suo sviluppatore. Contatto: <a href="mailto:danfg95@gmail.com">danfg95@gmail.com</a>.</p>
@@ -21,8 +21,9 @@
   <p>
     InsuCalc è uno strumento di supporto nutrizionale per persone con diabete che facilita il calcolo delle porzioni
     di carboidrati a partire dalle informazioni nutrizionali dei pasti. Oltre alla calcolatrice, offre funzionalità
-    premium come l'analisi dei pasti tramite foto con intelligenza artificiale, una ricerca di alimenti e uno
-    scanner di codici a barre. Il calcolo delle porzioni è la funzione principale ed è gratuito.
+    premium come una ricerca di alimenti, uno scanner di codici a barre, il salvataggio illimitato dei pasti e
+    l'analisi dei pasti tramite foto con intelligenza artificiale (disponibile solo per utenti autorizzati). Il
+    calcolo delle porzioni è la funzione principale ed è gratuito.
   </p>
   <p>
     <strong>InsuCalc non calcola dosi di farmaci, non è un dispositivo medico e non svolge alcuna funzione clinica.</strong>
@@ -33,9 +34,9 @@
   <h2>3. Avviso medico importante</h2>
   <p>
     InsuCalc è uno strumento di supporto e orientamento nutrizionale, <strong>non un dispositivo medico</strong> né
-    un sostituto del giudizio di un professionista sanitario. Le stime (incluse quelle dell'analisi IA) possono
-    contenere errori. Non utilizzare l'app come unica fonte per decisioni che riguardano la tua salute. Segui sempre
-    le indicazioni del tuo team medico.
+    un sostituto del giudizio di un professionista sanitario. Le stime (incluse quelle dell'analisi IA, quando
+    disponibile) possono contenere errori. Non utilizzare l'app come unica fonte per decisioni che riguardano la tua
+    salute. Segui sempre le indicazioni del tuo team medico.
   </p>
 
   <h2>4. Dati che l'app può trattare</h2>
@@ -46,65 +47,83 @@
     Authentication (Google).
   </p>
   <p><strong>b) Dati relativi alla salute (categorie particolari)</strong><br />
-    Le foto di cibo acquisite per l'analisi IA, i valori nutrizionali stimati (carboidrati, grassi, proteine) e i
-    calcoli delle porzioni derivati sono dati relativi alla salute. Ricevono una protezione rafforzata ai sensi del
-    GDPR. Le foto vengono utilizzate esclusivamente per effettuare l'analisi richiesta e non vengono pubblicate né
-    associate a un profilo pubblico.
+    Le foto di cibo acquisite per l'analisi IA (se questa funzionalità è disponibile per il tuo account), i valori
+    nutrizionali stimati (carboidrati, grassi, proteine) e i calcoli delle porzioni derivati sono dati relativi
+    alla salute. Ricevono una protezione rafforzata ai sensi del GDPR. Le foto vengono utilizzate esclusivamente
+    per effettuare l'analisi richiesta e non vengono pubblicate né associate a un profilo pubblico. I pasti che
+    salvi manualmente nell'app (con i loro valori nutrizionali) sono anch'essi dati relativi alla salute.
   </p>
-  <p><strong>c) Stato dell'abbonamento</strong><br />
+  <p><strong>c) Stato dell'abbonamento e contatori di utilizzo</strong><br />
     Per gestire l'accesso alle funzionalità premium, memorizziamo sui nostri server (Firebase Firestore) il tuo
-    identificatore utente, se il tuo abbonamento è attivo, la sua data di scadenza e un contatore di utilizzo.
-    Lo stato dell'abbonamento è sincronizzato tramite RevenueCat e le notifiche Apple.
+    identificatore utente, se il tuo abbonamento è attivo, la sua data di scadenza e contatori di base
+    dell'utilizzo delle funzionalità premium (Ricerca, Scanner e, quando disponibile, analisi IA), nonché il
+    numero attuale di pasti salvati. Questi contatori sono utilizzati esclusivamente per scopi statistici interni
+    e di miglioramento del prodotto. Non sono condivisi con terze parti per scopi commerciali. Lo stato
+    dell'abbonamento è sincronizzato tramite RevenueCat e le notifiche Apple.
   </p>
   <p><strong>d) Acquisti e abbonamenti in-app</strong><br />
     L'app utilizza StoreKit (Apple) e RevenueCat per gestire gli abbonamenti. Il pagamento e la validazione degli
     acquisti sono gestiti da Apple. Lo sviluppatore non riceve né memorizza i dati del tuo metodo di pagamento.
   </p>
   <p><strong>e) Dati memorizzati localmente sul dispositivo</strong><br />
-    Preferenze dell'app, impostazioni di calcolo, categorie di alimenti personalizzate, impostazioni di onboarding
-    e altre preferenze di utilizzo.
+    Preferenze dell'app, impostazioni di calcolo, categorie di alimenti personalizzate, impostazioni di onboarding,
+    cronologia di utilizzo (ricerche, scansioni e analisi fotografiche effettuate) e altre preferenze di utilizzo.
+    La cronologia può essere sincronizzata tra i tuoi dispositivi Apple tramite iCloud Key-Value Store (servizio
+    Apple), ad eccezione delle immagini associate, che rimangono solo sul dispositivo in cui sono state generate.
+  </p>
+  <p><strong>f) Query a Open Food Facts</strong><br />
+    Quando utilizzi la Ricerca o lo Scanner di codici a barre, l'app invia query al database pubblico di Open Food
+    Facts. In queste query non vengono condivisi la tua identità o dati personali — solo il testo di ricerca o il
+    codice a barre scansionato. Le immagini dei prodotti restituite da Open Food Facts vengono scaricate sul tuo
+    dispositivo solo localmente.
   </p>
 
-  <h2>5. Invio di foto a un fornitore IA (OpenAI)</h2>
+  <h2>5. Analisi dei pasti tramite foto (funzione opzionale, soggetta a disponibilità)</h2>
   <p>
-    Quando utilizzi l'analisi dei pasti tramite foto, l'immagine viene trasmessa in modo sicuro, attraverso il
-    nostro server, all'API di OpenAI con il solo scopo di stimare la composizione nutrizionale del piatto.
-    L'immagine viene elaborata per ottenere il risultato e non viene utilizzata per associarti a un profilo
-    pubblico. Il trattamento da parte di OpenAI è inoltre disciplinato dalle proprie condizioni e informativa
-    sulla privacy. Se non desideri che le tue immagini vengano elaborate in questo modo, non utilizzare la
-    funzione di analisi tramite foto.
+    InsuCalc include una funzione di analisi dei pasti tramite foto con intelligenza artificiale. <strong>Questa
+    funzione non è disponibile per tutti gli utenti e può essere attivata o disattivata in base a criteri tecnici o
+    normativi.</strong> Quando è disponibile e la utilizzi, l'immagine viene trasmessa in modo sicuro, attraverso
+    il nostro server, all'API di OpenAI con il solo scopo di stimare la composizione nutrizionale del piatto.
+    L'immagine viene elaborata per ottenere il risultato e non viene utilizzata per associarti a un profilo pubblico.
+    Il trattamento da parte di OpenAI è inoltre disciplinato dalle proprie condizioni e informativa sulla privacy.
+    Se non desideri che le tue immagini vengano elaborate in questo modo, non utilizzare la funzione di analisi
+    tramite foto.
   </p>
 
   <h2>6. Cosa NON fa l'app</h2>
   <p>
     Non vende dati personali. Non utilizza le tue foto né i tuoi dati sanitari per scopi pubblicitari. Non
-    mostra pubblicità di terze parti all'interno dell'app.
+    mostra pubblicità di terze parti all'interno dell'app. Non condivide i tuoi contatori di utilizzo con
+    inserzionisti o terze parti per scopi commerciali.
   </p>
 
   <h2>7. Servizi e terze parti</h2>
   <p>InsuCalc si avvale dei seguenti servizi di terze parti:</p>
   <ul>
-    <li>Apple (Accedi con Apple, StoreKit, App Store, iOS e servizi di sistema)</li>
-    <li>Google Firebase (Authentication, Firestore e Cloud Functions)</li>
+    <li>Apple (Accedi con Apple, StoreKit, App Store, iCloud Key-Value Store, iOS e servizi di sistema)</li>
+    <li>Google Firebase (Authentication, Firestore, Remote Config e Cloud Functions)</li>
     <li>RevenueCat (gestione dello stato degli abbonamenti)</li>
-    <li>OpenAI (analisi di immagini di cibo tramite IA)</li>
+    <li>Open Food Facts (database pubblico di alimenti e prodotti)</li>
+    <li>OpenAI (analisi di immagini di cibo tramite IA, quando disponibile)</li>
   </ul>
   <p>Ogni fornitore può applicare la propria informativa sulla privacy al trattamento dei dati all'interno dei suoi servizi.</p>
 
   <h2>8. Base giuridica (GDPR)</h2>
   <ul>
-    <li>Consenso esplicito per il trattamento dei dati sanitari (utilizzo dell'analisi foto IA) e, ove applicabile, autorizzazioni di sistema come la fotocamera.</li>
+    <li>Consenso esplicito per il trattamento dei dati sanitari (utilizzo dell'analisi foto IA, quando disponibile) e, ove applicabile, autorizzazioni di sistema come la fotocamera.</li>
     <li>Esecuzione del contratto/servizio richiesto dall'utente (calcolo delle porzioni, gestione dell'abbonamento e funzionalità premium).</li>
-    <li>Legittimo interesse per la sicurezza, il funzionamento e il miglioramento di base dell'app.</li>
+    <li>Legittimo interesse per la sicurezza, il funzionamento, il miglioramento di base dell'app e l'elaborazione di statistiche di utilizzo aggregate per decisioni di prodotto.</li>
   </ul>
 
   <h2>9. Conservazione</h2>
   <p>
-    I dati locali rimangono sul tuo dispositivo fino a quando non li elimini o disinstalli l'app. I dati associati
-    al tuo account (identificatore, stato abbonamento) vengono conservati finché il tuo account esiste; vengono
-    eliminati alla cancellazione dell'account. Le immagini inviate per l'analisi vengono elaborate per ottenere
-    il risultato; la loro conservazione da parte del fornitore IA è disciplinata dalle politiche di tale fornitore.
-    I dati trattati da terze parti vengono conservati secondo le rispettive politiche.
+    I dati locali (inclusa la cronologia di ricerche, scansioni e analisi fotografiche) rimangono sul tuo dispositivo
+    fino a quando non li elimini o disinstalli l'app. La cronologia è limitata alle 100 voci più recenti; le più
+    vecchie vengono eliminate automaticamente. I dati associati al tuo account sui nostri server (identificatore,
+    stato abbonamento, contatori di utilizzo) vengono conservati finché il tuo account esiste; vengono eliminati
+    alla cancellazione dell'account. Le immagini inviate per l'analisi vengono elaborate per ottenere il risultato;
+    la loro conservazione da parte del fornitore IA è disciplinata dalle politiche di tale fornitore. I dati
+    trattati da terze parti vengono conservati secondo le rispettive politiche.
   </p>
 
   <h2>10. Diritti dell'utente</h2>
